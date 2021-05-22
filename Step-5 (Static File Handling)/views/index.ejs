@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css" >
+    <title>Home Page</title>
+</head>
+<body>
+    <h1><b>Welcome to To-Do List <%= name %></b></h1>
+    
+
+    <div id="list-table">
+    <center>
+    <ul>
+        <% list.forEach(function(l){ %>
+            <li><%= l %></li>
+        <% }); %>
+    </ul>
+    </center>
+    </div>
+
+</body>
+</html>
